@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "boxmod",
+  "version": "${version}",
+  "name": "Box Mod",
+  "description": "My personal Minecraft mod",
+  "authors": [
+    "ShayBox"
+  ],
+  "contact": {
+    "website": "https://shaybox.com",
+    "repo": "https://github.com/ShayBox/BoxMod"
+  },
+  "license": "MIT",
+  "icon": "assets/boxmod/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.shaybox.boxmod.client.BoxModClient"
+    ],
+    "main": [
+      "com.shaybox.boxmod.BoxMod"
+    ]
+  },
+  "mixins": [
+    "boxmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
