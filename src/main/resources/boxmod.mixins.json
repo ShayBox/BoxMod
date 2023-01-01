@@ -6,6 +6,8 @@
   "mixins": [],
   "client": [
     "ClientPlayNetworkHandlerMixin",
+    "GameModeSelectionScreenMixin",
+    "KeyboardMixin",
     "MultiplayerScreenAccessor",
     "MultiplayerScreenMixin",
     "PlayerMoveFullMixin",
