@@ -24,6 +24,8 @@ import java.net.URLConnection;
 public class Hud {
 
     public static void onRender(MatrixStack matrixStack, float ignoredTickDelta) {
+        if (!KeyBindings.hud) return;
+
         MinecraftClient mc = MinecraftClient.getInstance();
 
         String[] lines = {

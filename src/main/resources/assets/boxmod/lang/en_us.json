@@ -1,0 +1,8 @@
+{
+  "boxmod.hud": "Hud",
+  "boxmod.hud.true": "Enabled Hud",
+  "boxmod.hud.false": "Disabled Hud",
+  "boxmod.flight": "Flight",
+  "boxmod.flight.true": "Enabled Flight",
+  "boxmod.flight.false": "Disabled Flight"
+}
