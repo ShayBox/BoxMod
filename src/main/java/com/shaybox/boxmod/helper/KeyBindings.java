@@ -18,7 +18,7 @@ public class KeyBindings {
         }
     }
 
-    public static boolean hud = true;
+    public static boolean hud = false;
     public static boolean flight = false;
 
     public static void tick(MinecraftClient mc) {

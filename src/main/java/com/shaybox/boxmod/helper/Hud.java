@@ -101,7 +101,7 @@ public class Hud {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-        }).dimensions(screen.width / 2 + 155, screen.height - 28, 20, 20).build();
+        }).dimensions(screen.width / 2 - 175, screen.height - 28, 20, 20).build();
     }
 
 }
