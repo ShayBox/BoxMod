@@ -17,7 +17,7 @@ public class ClientPlayNetworkHandlerMixin {
     public void onGameStateChange(GameStateChangeS2CPacket packet, CallbackInfo ci) {
         GameStateChangeS2CPacket.Reason reason = packet.getReason();
 
-        if (reason.equals(GameStateChangeS2CPacket.GAME_WON) || reason.equals(GameStateChangeS2CPacket.DEMO_MESSAGE_SHOWN)) {
+        if (reason.equals(GameStateChangeS2CPacket.DEMO_MESSAGE_SHOWN)) {
             ci.cancel();
         }
     }
