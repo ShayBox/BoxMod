@@ -66,13 +66,13 @@ public class Hud {
 
     public static void afterInit(MinecraftClient client, Screen screen, int scaledWidth, int scaledHeight) {
         if (screen instanceof MultiplayerScreen) {
-            ButtonWidget buttonWidget = buildSigiloButtonWidget(screen);
+            ButtonWidget buttonWidget = buildRSGButtonWidget(screen);
             Screens.getButtons(screen).add(buttonWidget);
         }
     }
 
-    private static ButtonWidget buildSigiloButtonWidget(Screen screen) {
-        return ButtonWidget.builder(Text.literal("Sig"), (button) -> {
+    private static ButtonWidget buildRSGButtonWidget(Screen screen) {
+        return ButtonWidget.builder(Text.literal("RSG"), (button) -> {
             try {
                 URL url = new URL("https://api.shaybox.com/sigilo/random");
                 URLConnection connection = url.openConnection();
