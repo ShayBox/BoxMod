@@ -26,7 +26,7 @@ public class KeyBindings {
 
         while (hudKey.wasPressed()) {
             hud = !hud;
-            mc.player.sendMessage(Text.translatable("boxmod.hud." + flight), false);
+            mc.player.sendMessage(Text.translatable("boxmod.hud." + hud), false);
         }
 
         while (flightKey.wasPressed()) {
